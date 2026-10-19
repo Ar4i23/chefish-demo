@@ -1,0 +1,148 @@
+const translations = {
+  ru: {
+    'nav.menu': 'Меню', 'nav.about': 'О нас', 'nav.delivery': 'Доставка', 'nav.offers': 'Комбо', 'nav.contacts': 'Контакты',
+    'action.order': 'Заказать сейчас', 'action.openMenu': 'Открыть меню', 'action.viewMenu': 'Смотреть всё меню', 'action.chooseCombo': 'Выбрать комбо',
+    'action.add': 'Добавить', 'action.addToCart': 'Добавить в корзину', 'action.checkout': 'Оформить заказ',
+    'action.back': 'Назад', 'action.next': 'Вперёд', 'action.home': 'На главную', 'action.continue': 'Продолжить покупки', 'action.continueToPayment': 'Перейти к оплате',
+    'action.remove': 'Удалить', 'action.payDemo': 'Подтвердить демо-оплату', 'action.useLocation': 'Определить моё местоположение',
+    'action.clear': 'Очистить', 'action.search': 'Поиск', 'action.close': 'Закрыть', 'action.retry': 'Попробовать ещё раз',
+    'hero.line1': 'Шаурма', 'hero.line2': 'которая', 'hero.line3': 'взрывает', 'hero.line4': 'вкус',
+    'hero.description': 'Гриль, свежие овощи и фирменные соусы — соберите заказ для самовывоза или доставки в Батуми.',
+    'hero.scroll': 'Прокрутите вниз', 'home.aboutTitle': 'Вкус CheFish — в каждой детали',
+    'home.aboutBody': 'Выбирайте блюда CheFish и оформляйте заказ напрямую: с доставкой по Батуми или бесплатным самовывозом.',
+    'home.deliveryTitle': 'Доставка по Батуми', 'home.deliveryBody': 'Привезём заказ примерно за 30 минут. Принимаем заказы до 23:00. Доставка — 3 ₾, самовывоз — бесплатно.',
+    'home.comboTitlePrefix': 'Вместе ещё', 'home.comboTitleAccent': 'вкуснее', 'home.comboBody': 'Шаурма, хрустящий картофель и кола. Состав комбо и стоимость уточняются у заведения.',
+    'home.hits': 'Наши хиты', 'home.sections.vegetables': 'Свежие овощи', 'home.sections.vegetablesBody': 'Яркие овощи добавляют свежий хруст каждому кусочку.',
+    'home.sections.sauce': 'Фирменные соусы', 'home.sections.sauceBody': 'Сливочный соус с зеленью завершает знакомый вкус CheFish.',
+    'home.sections.chicken': 'Сочная курица', 'home.sections.chickenBody': 'Кусочки курицы с гриля — основа классической шаурмы.',
+    'home.sections.assembly': 'Всё собирается вместе', 'home.sections.assemblyBody': 'Лаваш, начинка и соус складываются в шаурму, которую удобно взять с собой.',
+    'home.priceNote': 'Цены и состав в макете — демонстрационные. Их нужно подтвердить у владельца перед запуском реальных заказов.',
+    'category.shawarma': 'Шаурма', 'category.combo': 'Комбо', 'category.extras': 'Добавки', 'category.drinks': 'Напитки', 'category.sauces': 'Соусы',
+    'menu.title': 'Меню', 'menu.subtitle': 'Выберите блюдо, откройте состав и добавьте его в корзину.',
+    'menu.empty': 'В этой категории пока нет позиций.', 'product.ingredients': 'Что внутри', 'product.addons': 'Добавки',
+    'product.quantity': 'Количество', 'product.total': 'Итого за позицию', 'product.compositionDraft': 'Предварительный состав по макету. Подтвердить у владельца.',
+    'price.demo': 'Стоимость отдельных напитков и комбо уточняется у заведения.', 'price.confirmed': 'Цены на шаурму, добавки и соусы указаны в утверждённом прайсе.',
+    'product.pricePending': 'Стоимость этой позиции ещё не подтверждена. Добавление в заказ пока недоступно.',
+    'cart.title': 'Корзина', 'cart.emptyTitle': 'Корзина пока пуста', 'cart.emptyBody': 'Добавьте шаурму или комбо из меню — здесь появится ваш заказ.',
+    'toast.added': 'Добавлено в корзину', 'toast.viewCart': 'Перейти в корзину',
+    'cart.items': 'Товары', 'cart.discount': 'Скидка на комбо', 'cart.packaging': 'Упаковка', 'cart.delivery': 'Доставка', 'cart.total': 'Итого', 'cart.pickup': 'Самовывоз',
+    'checkout.title': 'Оформление заказа', 'checkout.contact': 'Контактные данные', 'checkout.name': 'Имя', 'checkout.phone': 'Телефон',
+    'checkout.fulfillment': 'Способ получения', 'checkout.delivery': 'Доставка · 3 ₾', 'checkout.pickup': 'Самовывоз · бесплатно',
+    'checkout.address': 'Адрес доставки', 'checkout.unit': 'Квартира или офис', 'checkout.comment': 'Комментарий к заказу',
+    'checkout.mapTitle': 'Точка доставки', 'checkout.mapHint': 'Нажмите на карту или передвиньте маркер. Адрес можно вписать вручную.',
+    'checkout.locationPending': 'Точка не выбрана', 'checkout.locationSelected': 'Выбранная точка', 'checkout.noMap': 'Карта не загрузилась. Можно продолжить, указав адрес вручную.',
+    'checkout.paymentHint': 'На следующем шаге можно проверить демо-оплату. Реальный приём заказов и списание денег не подключены.',
+    'checkout.required': 'Заполните обязательные поля, чтобы продолжить.', 'checkout.empty': 'Сначала добавьте товары в корзину.',
+    'payment.title': 'Демо-оплата', 'payment.notice': 'Это демонстрация интерфейса. Выберите результат тестовой оплаты — реальные деньги не списываются, заказ в ресторан не отправляется.', 'payment.successAction': 'Имитировать успешную оплату', 'payment.failAction': 'Имитировать отказ оплаты', 'payment.demoLabel': 'ТЕСТОВЫЙ РЕЖИМ · БЕЗ СПИСАНИЯ ДЕНЕГ', 'payment.failureTitle': 'Оплата не прошла', 'payment.failureNotice': 'Это тестовый отказ. Заказ не отправлен, деньги не списаны. Корзина сохранена — можно повторить попытку.',
+    'payment.summary': 'Состав заказа', 'payment.goods': 'Товары', 'payment.method': 'Способ получения',
+    'success.title': 'Демо-оплата успешна', 'success.notice': 'Тестовый сценарий завершён. Это не реальная оплата: деньги не списаны, заказ в ресторан не отправлен.',
+    'success.number': 'Номер заказа', 'success.address': 'Адрес получения', 'notFound.title': 'Страница не найдена',
+    'notFound.body': 'Похоже, такой страницы нет. Вернитесь на главную или откройте меню.', 'footer.note': 'Демо-сайт CheFish · Батуми',
+    'footer.paymentNote': 'Демо-сайт: реальные платежи и отправка заказов не подключены.', 'generic.confirmed': 'Выбрано', 'generic.toBeConfirmed': 'Уточняется', 'generic.language': 'Язык', 'generic.menuOpen': 'Открыть навигацию',
+  },
+  en: {
+    'nav.menu': 'Menu', 'nav.about': 'About', 'nav.delivery': 'Delivery', 'nav.offers': 'Combos', 'nav.contacts': 'Contact',
+    'action.order': 'Order now', 'action.openMenu': 'Open menu', 'action.viewMenu': 'View full menu', 'action.chooseCombo': 'Choose a combo',
+    'action.add': 'Add', 'action.addToCart': 'Add to cart', 'action.checkout': 'Continue to checkout',
+    'action.back': 'Back', 'action.next': 'Next', 'action.home': 'Home', 'action.continue': 'Continue shopping', 'action.continueToPayment': 'Continue to payment',
+    'action.remove': 'Remove', 'action.payDemo': 'Confirm demo payment', 'action.useLocation': 'Use my location',
+    'action.clear': 'Clear', 'action.search': 'Search', 'action.close': 'Close', 'action.retry': 'Try again',
+    'hero.line1': 'Shawarma', 'hero.line2': 'made to', 'hero.line3': 'bring the', 'hero.line4': 'flavour',
+    'hero.description': 'Grilled fillings, fresh vegetables and signature sauces. Order for pickup or delivery in Batumi.',
+    'hero.scroll': 'Scroll to explore', 'home.aboutTitle': 'The CheFish taste, in every detail',
+    'home.aboutBody': 'Choose CheFish dishes and order directly: delivery across Batumi or free pickup.',
+    'home.deliveryTitle': 'Delivery across Batumi', 'home.deliveryBody': 'We deliver in about 30 minutes. Orders are accepted until 23:00. Delivery is 3 ₾; pickup is free.',
+    'home.comboTitlePrefix': 'Better', 'home.comboTitleAccent': 'Together', 'home.comboBody': 'Shawarma, crisp fries and cola. Combo contents and prices are being confirmed by the restaurant.',
+    'home.hits': 'CheFish favourites', 'home.sections.vegetables': 'Fresh vegetables', 'home.sections.vegetablesBody': 'Fresh vegetables bring a bright crunch to every bite.',
+    'home.sections.sauce': 'Signature sauces', 'home.sections.sauceBody': 'Creamy sauce and herbs finish the familiar CheFish flavour.',
+    'home.sections.chicken': 'Juicy chicken', 'home.sections.chickenBody': 'Grilled chicken pieces make the base of classic shawarma.',
+    'home.sections.assembly': 'It all comes together', 'home.sections.assemblyBody': 'Flatbread, filling and sauce come together in a shawarma made to go.',
+    'home.priceNote': 'Prices and ingredients shown in this mockup are for demonstration and need owner confirmation before real orders.',
+    'category.shawarma': 'Shawarma', 'category.combo': 'Combos', 'category.extras': 'Extras', 'category.drinks': 'Drinks', 'category.sauces': 'Sauces',
+    'menu.title': 'Menu', 'menu.subtitle': 'Choose a dish, view its details and add it to your cart.',
+    'menu.empty': 'There are no items in this category yet.', 'product.ingredients': 'What’s inside', 'product.addons': 'Add-ons',
+    'product.quantity': 'Quantity', 'product.total': 'Item total', 'product.compositionDraft': 'Draft ingredients based on the supplied mockup. Confirm with the owner.',
+    'price.demo': 'Prices for some drinks and combos are being confirmed by the restaurant.', 'price.confirmed': 'Shawarma, add-on and sauce prices use the approved price list.',
+    'product.pricePending': 'This item price has not been confirmed. Adding it to an order is unavailable.',
+    'cart.title': 'Your cart', 'cart.emptyTitle': 'Your cart is empty', 'cart.emptyBody': 'Add shawarma or a combo from the menu and your order will appear here.',
+    'toast.added': 'Added to cart', 'toast.viewCart': 'View cart',
+    'cart.items': 'Items', 'cart.discount': 'Combo discount', 'cart.packaging': 'Packaging', 'cart.delivery': 'Delivery', 'cart.total': 'Total', 'cart.pickup': 'Pickup',
+    'checkout.title': 'Checkout', 'checkout.contact': 'Contact details', 'checkout.name': 'Name', 'checkout.phone': 'Phone',
+    'checkout.fulfillment': 'How to receive your order', 'checkout.delivery': 'Delivery · 3 ₾', 'checkout.pickup': 'Pickup · free',
+    'checkout.address': 'Delivery address', 'checkout.unit': 'Apartment or office', 'checkout.comment': 'Order notes',
+    'checkout.mapTitle': 'Delivery point', 'checkout.mapHint': 'Tap the map or move the marker. You can also enter the address manually.',
+    'checkout.locationPending': 'No point selected', 'checkout.locationSelected': 'Selected point', 'checkout.noMap': 'The map did not load. You can continue by entering the address manually.',
+    'checkout.paymentHint': 'You can try the demo payment on the next step. Real order intake and charging are not connected.',
+    'checkout.required': 'Fill in the required fields to continue.', 'checkout.empty': 'Add items to your cart first.',
+    'payment.title': 'Demo payment', 'payment.notice': 'This is a payment interface demo. Choose a test result — no real money is charged and no order is sent to the restaurant.', 'payment.successAction': 'Simulate successful payment', 'payment.failAction': 'Simulate declined payment', 'payment.demoLabel': 'TEST MODE · NO CHARGE', 'payment.failureTitle': 'Payment declined', 'payment.failureNotice': 'This is a simulated decline. No order was sent and no money was charged. Your cart is saved so you can try again.',
+    'payment.summary': 'Order summary', 'payment.goods': 'Items', 'payment.method': 'Fulfillment',
+    'success.title': 'Demo payment successful', 'success.notice': 'The test scenario is complete. This is not a real payment: no money was charged and no order was sent to the restaurant.',
+    'success.number': 'Demo order number', 'success.address': 'Pickup or delivery address', 'notFound.title': 'Page not found',
+    'notFound.body': 'This page is unavailable. Return home or open the menu.', 'footer.note': 'CheFish demo site · Batumi',
+    'footer.paymentNote': 'Demo site: real payments and order submission are not connected.', 'generic.confirmed': 'Selected', 'generic.toBeConfirmed': 'To be confirmed', 'generic.language': 'Language', 'generic.menuOpen': 'Open navigation',
+  },
+  ka: {
+    'nav.menu': 'მენიუ', 'nav.about': 'ჩვენ შესახებ', 'nav.delivery': 'მიტანა', 'nav.offers': 'კომბო', 'nav.contacts': 'კონტაქტი',
+    'action.order': 'შეუკვეთე ახლავე', 'action.openMenu': 'მენიუს გახსნა', 'action.viewMenu': 'სრული მენიუ', 'action.chooseCombo': 'კომბოს არჩევა',
+    'action.add': 'დამატება', 'action.addToCart': 'კალათაში დამატება', 'action.checkout': 'შეკვეთის გაფორმება',
+    'action.back': 'უკან', 'action.next': 'შემდეგი', 'action.home': 'მთავარი', 'action.continue': 'შეძენის გაგრძელება', 'action.continueToPayment': 'გადახდაზე გაგრძელება',
+    'action.remove': 'წაშლა', 'action.payDemo': 'დემო გადახდის დადასტურება', 'action.useLocation': 'ჩემი მდებარეობის დადგენა',
+    'action.clear': 'გასუფთავება', 'action.search': 'ძიება', 'action.close': 'დახურვა', 'action.retry': 'კიდევ ცდა',
+    'hero.line1': 'შაურმა', 'hero.line2': 'რომელიც', 'hero.line3': 'გემოს', 'hero.line4': 'აფეთქებს',
+    'hero.description': 'გრილი, ახალი ბოსტნეული და საფირმო სოუსები — შეუკვეთეთ მიტანა ბათუმში ან უფასო თვითგატანა.',
+    'hero.scroll': 'ჩამოასქროლეთ', 'home.aboutTitle': 'CheFish-ის გემო ყველა დეტალში',
+    'home.aboutBody': 'აირჩიეთ CheFish-ის კერძები და შეუკვეთეთ პირდაპირ: მიტანა ბათუმში ან უფასო თვითგატანა.',
+    'home.deliveryTitle': 'მიტანა ბათუმის მასშტაბით', 'home.deliveryBody': 'შეკვეთას დაახლოებით 30 წუთში მოგიტანთ. შეკვეთებს 23:00-მდე ვიღებთ. მიტანა — 3 ₾, თვითგატანა — უფასო.',
+    'home.comboTitlePrefix': 'ერთად უფრო', 'home.comboTitleAccent': 'გემრიელია', 'home.comboBody': 'შაურმა, ხრაშუნა ფრი და კოლა. კომბოს შემადგენლობა და ფასი რესტორანთან ზუსტდება.',
+    'home.hits': 'CheFish-ის რჩეულები', 'home.sections.vegetables': 'ახალი ბოსტნეული', 'home.sections.vegetablesBody': 'ახალი ბოსტნეული თითოეულ ლუკმას ხრაშუნა სიხალისეს მატებს.',
+    'home.sections.sauce': 'საფირმო სოუსები', 'home.sections.sauceBody': 'ნაღების სოუსი და მწვანილი CheFish-ის გემოს ასრულებს.',
+    'home.sections.chicken': 'წვნიანი ქათამი', 'home.sections.chickenBody': 'გრილზე მომზადებული ქათამი კლასიკური შაურმის საფუძველია.',
+    'home.sections.assembly': 'ყველაფერი ერთად', 'home.sections.assemblyBody': 'ლავაში, შიგთავსი და სოუსი შაურმად ერთიანდება, რომელსაც თან წაიღებთ.',
+    'home.priceNote': 'მაკეტის ფასები და შემადგენლობა სადემონსტრაციოა. რეალურ შეკვეთებამდე მფლობელმა უნდა დაადასტუროს.',
+    'category.shawarma': 'შაურმა', 'category.combo': 'კომბო', 'category.extras': 'დამატებები', 'category.drinks': 'სასმელები', 'category.sauces': 'სოუსები',
+    'menu.title': 'მენიუ', 'menu.subtitle': 'აირჩიეთ კერძი, ნახეთ დეტალები და დაამატეთ კალათაში.',
+    'menu.empty': 'ამ კატეგორიაში ჯერ პროდუქტები არ არის.', 'product.ingredients': 'შემადგენლობა', 'product.addons': 'დამატებები',
+    'product.quantity': 'რაოდენობა', 'product.total': 'პოზიციის ჯამი', 'product.compositionDraft': 'მაკეტის მიხედვით შედგენილი შავი ვერსია. დაადასტურეთ მფლობელთან.',
+    'price.demo': 'ზოგიერთი სასმელისა და კომბოს ფასი რესტორანთან ზუსტდება.', 'price.confirmed': 'შაურმის, დამატებებისა და სოუსების ფასები დამტკიცებულ სიას შეესაბამება.',
+    'product.pricePending': 'ამ პოზიციის ფასი ჯერ არ არის დადასტურებული. შეკვეთაში დამატება მიუწვდომელია.',
+    'cart.title': 'კალათა', 'cart.emptyTitle': 'კალათა ცარიელია', 'cart.emptyBody': 'მენიუდან დაამატეთ შაურმა ან კომბო და შეკვეთა აქ გამოჩნდება.',
+    'toast.added': 'კალათაში დაემატა', 'toast.viewCart': 'კალათის ნახვა',
+    'cart.items': 'პროდუქტები', 'cart.discount': 'კომბოს ფასდაკლება', 'cart.packaging': 'შეფუთვა', 'cart.delivery': 'მიტანა', 'cart.total': 'ჯამი', 'cart.pickup': 'თვითგატანა',
+    'checkout.title': 'შეკვეთის გაფორმება', 'checkout.contact': 'საკონტაქტო ინფორმაცია', 'checkout.name': 'სახელი', 'checkout.phone': 'ტელეფონი',
+    'checkout.fulfillment': 'მიღების მეთოდი', 'checkout.delivery': 'მიტანა · 3 ₾', 'checkout.pickup': 'თვითგატანა · უფასო',
+    'checkout.address': 'მიტანის მისამართი', 'checkout.unit': 'ბინა ან ოფისი', 'checkout.comment': 'კომენტარი შეკვეთაზე',
+    'checkout.mapTitle': 'მიტანის წერტილი', 'checkout.mapHint': 'დააჭირეთ რუკას ან გადაადგილეთ მარკერი. მისამართის ხელით შეყვანაც შეგიძლიათ.',
+    'checkout.locationPending': 'წერტილი არჩეული არ არის', 'checkout.locationSelected': 'არჩეული წერტილი', 'checkout.noMap': 'რუკა ვერ ჩაიტვირთა. შეგიძლიათ მისამართი ხელით მიუთითოთ.',
+    'checkout.paymentHint': 'შემდეგ ეტაპზე დემო გადახდის შემოწმება შეგიძლიათ. რეალური შეკვეთები და თანხის ჩამოჭრა მიერთებული არ არის.',
+    'checkout.required': 'გასაგრძელებლად შეავსეთ აუცილებელი ველები.', 'checkout.empty': 'ჯერ დაამატეთ პროდუქტები კალათაში.',
+    'payment.title': 'დემო გადახდა', 'payment.notice': 'ეს გადახდის ინტერფეისის დემოა. აირჩიეთ სატესტო შედეგი — რეალური თანხა არ ჩამოიჭრება და შეკვეთა რესტორანს არ გაეგზავნება.', 'payment.successAction': 'წარმატებული გადახდის იმიტაცია', 'payment.failAction': 'უარყოფილი გადახდის იმიტაცია', 'payment.demoLabel': 'ტესტური რეჟიმი · თანხა არ ჩამოიჭრება', 'payment.failureTitle': 'გადახდა ვერ შესრულდა', 'payment.failureNotice': 'ეს სატესტო უარყოფაა. შეკვეთა არ გაგზავნილა და თანხა არ ჩამოჭრილა. კალათა შენახულია — შეგიძლიათ სცადოთ ხელახლა.',
+    'payment.summary': 'შეკვეთის შეჯამება', 'payment.goods': 'პროდუქტები', 'payment.method': 'მიღების მეთოდი',
+    'success.title': 'დემო გადახდა წარმატებულია', 'success.notice': 'ტესტური სცენარი დასრულდა. ეს რეალური გადახდა არ არის: თანხა არ ჩამოჭრილა და შეკვეთა რესტორანს არ გაეგზავნა.',
+    'success.number': 'დემო შეკვეთის ნომერი', 'success.address': 'მიტანის ან აღების მისამართი', 'notFound.title': 'გვერდი ვერ მოიძებნა',
+    'notFound.body': 'ეს გვერდი მიუწვდომელია. დაბრუნდით მთავარ გვერდზე ან გახსენით მენიუ.', 'footer.note': 'CheFish-ის დემო საიტი · ბათუმი',
+    'footer.paymentNote': 'დემო საიტი: რეალური გადახდა და შეკვეთის გაგზავნა მიერთებული არ არის.', 'generic.confirmed': 'არჩეულია', 'generic.toBeConfirmed': 'დასაზუსტებელია', 'generic.language': 'ენა', 'generic.menuOpen': 'ნავიგაციის გახსნა',
+  },
+};
+
+export function getLanguage() {
+  try {
+    const lang = window.localStorage.getItem('chefish.language');
+    return ['ru', 'en', 'ka'].includes(lang) ? lang : 'ru';
+  } catch {
+    return 'ru';
+  }
+}
+
+export function setLanguage(lang) {
+  if (!['ru', 'en', 'ka'].includes(lang)) return;
+  try {
+    window.localStorage.setItem('chefish.language', lang);
+  } catch {
+    // Language changes still apply for the current page render.
+  }
+  document.documentElement.lang = lang;
+}
+
+export function t(key, lang = getLanguage()) {
+  return translations[lang]?.[key] ?? translations.ru[key] ?? key;
+}

@@ -1,0 +1,247 @@
+[
+  {
+    "source": "image_hero/Три фирменных ролла CheFish на гриле.png",
+    "output": "assets/images/sections/hero-rolls.jpg",
+    "webpOutput": "assets/images/sections/hero-rolls.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "images_section/Взрыв свежего салата в воздухе.png",
+    "output": "assets/images/sections/vegetables.jpg",
+    "webpOutput": "assets/images/sections/vegetables.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "images_section/Взрывная сборка шаурмы на гриле.png",
+    "output": "assets/images/sections/assembly.jpg",
+    "webpOutput": "assets/images/sections/assembly.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "images_section/Взрывной полёт пряной курицы.png",
+    "output": "assets/images/sections/chicken.jpg",
+    "webpOutput": "assets/images/sections/chicken.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "images_section/Кремовый вихрь с чесноком и зеленью.png",
+    "output": "assets/images/sections/sauce.jpg",
+    "webpOutput": "assets/images/sections/sauce.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "images_section/Шаурма, картофель фри и ледяная кола.png",
+    "output": "assets/images/sections/combo-banner.jpg",
+    "webpOutput": "assets/images/sections/combo-banner.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Гриль-ролл с тунцом и овощами.png",
+    "output": "assets/images/menu/tuna-roll.jpg",
+    "webpOutput": "assets/images/menu/tuna-roll.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Гурмэ-шаурма с хрустящей рыбой и соусом.png",
+    "output": "assets/images/menu/fish-shawarma.jpg",
+    "webpOutput": "assets/images/menu/fish-shawarma.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Кинематографичный шаурма-ролл с гриль-курицей.png",
+    "output": "assets/images/menu/chicken-shawarma.jpg",
+    "webpOutput": "assets/images/menu/chicken-shawarma.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Креветочный ролл с темпурой и соусом.png",
+    "output": "assets/images/menu/shrimp-roll.jpg",
+    "webpOutput": "assets/images/menu/shrimp-roll.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Маринованные халапеньо в деревенском стиле.png",
+    "output": "assets/images/menu/jalapeno.jpg",
+    "webpOutput": "assets/images/menu/jalapeno.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Охлаждённая вода CheFish среди льда и специй.png",
+    "output": "assets/images/menu/water.jpg",
+    "webpOutput": "assets/images/menu/water.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Рустическая композиция с домашним кетчупом.png",
+    "output": "assets/images/menu/ketchup.jpg",
+    "webpOutput": "assets/images/menu/ketchup.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Сливочно-чесночный соус с травами и специями.png",
+    "output": "assets/images/menu/garlic-sauce.jpg",
+    "webpOutput": "assets/images/menu/garlic-sauce.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Холодная Coca‑Cola в деревенском свете.png",
+    "output": "assets/images/menu/cola.jpg",
+    "webpOutput": "assets/images/menu/cola.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Холодный айран с мятой и льдом.png",
+    "output": "assets/images/menu/ayran.jpg",
+    "webpOutput": "assets/images/menu/ayran.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Хрустящий картофель CheFish с соусом.png",
+    "output": "assets/images/menu/fries.jpg",
+    "webpOutput": "assets/images/menu/fries.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Шаурма с хрустящими овощами и соусом.png",
+    "output": "assets/images/menu/pita-shawarma.jpg",
+    "webpOutput": "assets/images/menu/pita-shawarma.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "menu_cards/Янтарное пиво на деревенской доске.png",
+    "output": "assets/images/menu/beer.jpg",
+    "webpOutput": "assets/images/menu/beer.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Аппетитный кебаб-комбо с колой и фри.png",
+    "output": "assets/images/combo/kebab-cola-combo.jpg",
+    "webpOutput": "assets/images/combo/kebab-cola-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Аппетитный ролл CheFish с картофелем и водой.png",
+    "output": "assets/images/combo/roll-water-combo.jpg",
+    "webpOutput": "assets/images/combo/roll-water-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Гриль-курица в пите с картофелем и айраном.png",
+    "output": "assets/images/combo/chicken-pita-ayran-combo.jpg",
+    "webpOutput": "assets/images/combo/chicken-pita-ayran-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Гриль-ролл с креветками и айраном.png",
+    "output": "assets/images/combo/shrimp-roll-ayran-combo.jpg",
+    "webpOutput": "assets/images/combo/shrimp-roll-ayran-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Гриль-шаурма с креветками и картофелем.png",
+    "output": "assets/images/combo/shrimp-fries-combo.jpg",
+    "webpOutput": "assets/images/combo/shrimp-fries-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Гурме-фиш-шаурма с картофелем и колой.png",
+    "output": "assets/images/combo/gourmet-fish-cola-combo.jpg",
+    "webpOutput": "assets/images/combo/gourmet-fish-cola-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Креветочный шаурма-комбо CheFish с колой.png",
+    "output": "assets/images/combo/shrimp-cola-combo.jpg",
+    "webpOutput": "assets/images/combo/shrimp-cola-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Пита с картофелем фри и водой CheFish.png",
+    "output": "assets/images/combo/pita-water-combo.jpg",
+    "webpOutput": "assets/images/combo/pita-water-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Рыбный ролл с айраном и фри.png",
+    "output": "assets/images/combo/fish-ayran-combo.jpg",
+    "webpOutput": "assets/images/combo/fish-ayran-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Тунец-шаверма с картофелем и айраном.png",
+    "output": "assets/images/combo/tuna-ayran-combo.jpg",
+    "webpOutput": "assets/images/combo/tuna-ayran-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Тунец-шаурма с картофелем и колой.png",
+    "output": "assets/images/combo/tuna-cola-combo.jpg",
+    "webpOutput": "assets/images/combo/tuna-cola-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Тунец-шаурма с картофелем фри и водой.png",
+    "output": "assets/images/combo/tuna-water-combo.jpg",
+    "webpOutput": "assets/images/combo/tuna-water-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Фиш-шаверма CheFish с картофелем и водой.png",
+    "output": "assets/images/combo/fish-water-combo.jpg",
+    "webpOutput": "assets/images/combo/fish-water-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Шаурма с картофелем и колой CheFish.png",
+    "output": "assets/images/combo/shawarma-cola-combo.jpg",
+    "webpOutput": "assets/images/combo/shawarma-cola-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "combo/Шаурма с картофелем фри и айраном.png",
+    "output": "assets/images/combo/shawarma-ayran-combo.jpg",
+    "webpOutput": "assets/images/combo/shawarma-ayran-combo.webp",
+    "imported": true,
+    "note": ""
+  },
+  {
+    "source": "logo/Логотип CheFish с белой рыбой.png",
+    "output": "assets/images/brand/chefish-logo.png",
+    "webpOutput": "assets/images/brand/chefish-logo.png",
+    "imported": true,
+    "note": ""
+  }
+]
