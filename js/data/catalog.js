@@ -63,8 +63,8 @@ export const products = [
   {
     id: 'pita-shawarma', category: 'shawarma',
     menuName: { ru: 'В пите', en: 'In pita', ka: 'პიტაში' },
-    name: { ru: 'Шаурма в пите', en: 'Pita shawarma', ka: 'შაურმა პიტაში' },
-    description: { ru: 'Шаурма в пите с хрустящими овощами и соусом.', en: 'Pita shawarma with crisp vegetables and sauce.', ka: 'შაურმა პიტაში ხრაშუნა ბოსტნეულითა და სოუსით.' },
+    name: { ru: 'Пита с тунцом', en: 'Tuna pita', ka: 'პიტა თინუსით' },
+    description: { ru: 'Пита с тунцом на гриле, свежими овощами и соусом.', en: 'Pita with lightly grilled tuna, fresh vegetables and sauce.', ka: 'პიტა მსუბუქად გრილზე შემწვარი თინუსით, ახალი ბოსტნეულითა და სოუსით.' },
     ingredients: localizedPending,
     image: '/assets/images/menu/pita-shawarma.webp', priceTetri: ORDER_PRICES_TETRI.pita,
     availableAddons: [],

@@ -1,6 +1,6 @@
 [
   {
-    "source": "image_hero/Три фирменных ролла CheFish на гриле.png",
+    "source": "image_hero/Гурманские роллы CheFish у камина.png",
     "output": "assets/images/sections/hero-rolls.jpg",
     "webpOutput": "assets/images/sections/hero-rolls.webp",
     "imported": true,
@@ -14,14 +14,14 @@
     "note": ""
   },
   {
-    "source": "images_section/Взрывная сборка шаурмы на гриле.png",
+    "source": "images_section/Взрывной гриль-ролл с тунцом и соусом.png",
     "output": "assets/images/sections/assembly.jpg",
     "webpOutput": "assets/images/sections/assembly.webp",
     "imported": true,
     "note": ""
   },
   {
-    "source": "images_section/Взрывной полёт пряной курицы.png",
+    "source": "images_section/Взрывная композиция из тунца и лимона.png",
     "output": "assets/images/sections/chicken.jpg",
     "webpOutput": "assets/images/sections/chicken.webp",
     "imported": true,
@@ -35,25 +35,25 @@
     "note": ""
   },
   {
-    "source": "images_section/Шаурма, картофель фри и ледяная кола.png",
+    "source": "images_section/Тунец-шаурма с хрустящим картофелем и колой.png",
     "output": "assets/images/sections/combo-banner.jpg",
     "webpOutput": "assets/images/sections/combo-banner.webp",
     "imported": true,
     "note": ""
   },
   {
-    "source": "menu_cards/Гриль-ролл с тунцом и овощами.png",
+    "source": "menu_cards/Гриль-ролл с тунцом и овощами — копия.png",
     "output": "assets/images/menu/tuna-roll.jpg",
     "webpOutput": "assets/images/menu/tuna-roll.webp",
     "imported": true,
     "note": ""
   },
   {
-    "source": "menu_cards/Гурмэ-шаурма с хрустящей рыбой и соусом.png",
+    "source": "menu_cards/Гриль-ролл с консервированным тунцом и овощами.png",
     "output": "assets/images/menu/fish-shawarma.jpg",
     "webpOutput": "assets/images/menu/fish-shawarma.webp",
     "imported": true,
-    "note": ""
+    "note": "Из нового архива; проверить соответствие блюда по меню заказчика."
   },
   {
     "source": "menu_cards/Кинематографичный шаурма-ролл с гриль-курицей.png",
@@ -119,7 +119,7 @@
     "note": ""
   },
   {
-    "source": "menu_cards/Шаурма с хрустящими овощами и соусом.png",
+    "source": "menu_cards/Пита с обжаренным тунцом и свежими овощами.png",
     "output": "assets/images/menu/pita-shawarma.jpg",
     "webpOutput": "assets/images/menu/pita-shawarma.webp",
     "imported": true,

@@ -7,7 +7,7 @@
 .hero__title { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 100%; margin: 0 0 28px; color: #fff; font: 400 clamp(64px, 7.8vw, 112px)/.82 var(--font-display); letter-spacing: -.035em; text-transform: uppercase; text-wrap: balance; }
 .hero__title span { display: block; }
 .hero__title span:first-child { transform: translate(12px, 10px); }
-.hero__title span:nth-child(2) { padding-left: .44em; font-size: .68em; }
+.hero__title span:nth-child(2) { padding-left: .14em; font-size: 1em; }
 .hero__title span:nth-child(3) { margin-top: 30px; }
 .hero__title .hero__title-accent { padding-left: .38em; }
 .hero__title .hero__title-accent { color: var(--color-accent); }
@@ -25,17 +25,19 @@
 .feature-block__image, .feature-block__scrim { position: absolute; z-index: -1; inset: 0; width: 100%; height: 100%; }
 .feature-block__image { object-fit: cover; object-position: center; }
 .feature-block__scrim { background: linear-gradient(90deg, rgb(5 5 4 / 88%) 0%, rgb(5 5 4 / 54%) 34%, transparent 80%), linear-gradient(0deg, rgb(5 5 4 / 30%), transparent 28%); }
-.feature-block__inner { display: flex; align-items: center; min-height: inherit; padding-block: 72px; }
-.feature-block__content { width: min(440px, 44%); }
-.feature-block__title { margin: 0 0 14px; color: #fff; font: 700 clamp(44px, 6.6vw, 94px)/.87 var(--font-heading); text-transform: uppercase; }
+.feature-block__inner { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; min-height: inherit; padding-block: 72px; }
+.feature-block__content { width: min(440px, 44%); min-width: 0; justify-self: start; text-align: left; }
+.feature-block__title { margin: 0 0 14px; color: #fff; font: 700 clamp(40px, 4.7vw, 66px)/.92 var(--font-heading); overflow-wrap: break-word; text-transform: uppercase; }
 .feature-block__description { max-width: 330px; margin: 0; color: #f1ece6; font-size: clamp(15px, 1.25vw, 18px); line-height: 1.45; }
 .feature-block--vegetables .feature-block__scrim { background: linear-gradient(270deg, rgb(5 5 4 / 91%) 0%, rgb(5 5 4 / 67%) 26%, transparent 72%); }
-.feature-block--vegetables .feature-block__content { margin-left: auto; text-align: left; }
+.feature-block--vegetables .feature-block__content { justify-self: end; text-align: right; }
+.feature-block--vegetables .feature-block__description { margin-left: auto; }
 .feature-block--vegetables .feature-block__image { object-position: 47% center; }
 .feature-block--sauce .feature-block__scrim { background: linear-gradient(90deg, rgb(5 5 4 / 92%) 0%, rgb(5 5 4 / 62%) 32%, transparent 78%); }
 .feature-block--sauce .feature-block__image { object-position: 54% center; }
 .feature-block--chicken .feature-block__scrim { background: linear-gradient(270deg, rgb(5 5 4 / 90%) 0%, rgb(5 5 4 / 58%) 30%, transparent 75%); }
-.feature-block--chicken .feature-block__content { margin-left: auto; }
+.feature-block--chicken .feature-block__content { justify-self: end; text-align: right; }
+.feature-block--chicken .feature-block__description { margin-left: auto; }
 .feature-block--chicken .feature-block__image { object-position: center; }
 .feature-block--assembly { min-height: clamp(440px, 51vw, 720px); }
 .feature-block--assembly .feature-block__scrim { background: linear-gradient(90deg, rgb(5 5 4 / 90%) 0%, rgb(5 5 4 / 62%) 35%, transparent 78%); }
@@ -57,7 +59,7 @@
 .bestsellers__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .about-strip { padding-block: clamp(70px, 10vw, 136px); background: #12110f; }
 .about-strip__inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(280px, .7fr); align-items: end; gap: clamp(28px, 8vw, 120px); }
-.about-strip__title { max-width: 600px; margin: 0; color: #fff; font: 700 clamp(42px, 6vw, 78px)/.9 var(--font-heading); text-transform: uppercase; }
+.about-strip__title { max-width: 600px; margin: 0; color: #fff; font: 700 clamp(42px, 6vw, 78px)/1.08 var(--font-heading); letter-spacing: .005em; word-spacing: .12em; text-transform: uppercase; }
 .about-strip__description { max-width: 480px; margin: 0; color: #e5dfd7; font-size: 18px; line-height: 1.5; }
 .service-strip { padding-block: 35px; background: var(--color-accent); }
 .service-strip__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
@@ -85,8 +87,9 @@
   .hero__title .hero__title-accent { padding-left: .3em; }
   .hero__stamp { right: 5%; bottom: 9%; }
   .feature-block { min-height: 470px; }
-  .feature-block__content, .feature-block--vegetables .feature-block__content, .feature-block--chicken .feature-block__content { width: min(400px, 53%); margin: 0; }
-  .feature-block__scrim, .feature-block--vegetables .feature-block__scrim, .feature-block--chicken .feature-block__scrim { background: linear-gradient(90deg, rgb(5 5 4 / 91%) 0%, rgb(5 5 4 / 61%) 42%, transparent 85%); }
+  .feature-block__content { width: min(400px, 53%); }
+  .feature-block--sauce .feature-block__scrim, .feature-block--assembly .feature-block__scrim { background: linear-gradient(90deg, rgb(5 5 4 / 91%) 0%, rgb(5 5 4 / 61%) 42%, transparent 85%); }
+  .feature-block--vegetables .feature-block__scrim, .feature-block--chicken .feature-block__scrim { background: linear-gradient(270deg, rgb(5 5 4 / 91%) 0%, rgb(5 5 4 / 61%) 42%, transparent 85%); }
   .bestsellers__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .product-rail { grid-auto-columns: minmax(230px, 31%); }
 }
@@ -98,21 +101,26 @@
   .hero__layout { align-items: end; padding-top: 80px; }
   .hero__content { width: 100%; padding-block: 0 94px; }
   .hero__title { max-width: 100%; margin-bottom: 18px; font-size: clamp(39px, 12vw, 60px); line-height: .82; }
-  .hero__title span:nth-child(2) { padding-left: .28em; font-size: .7em; }
+  .hero__title span:nth-child(2) { padding-left: .12em; font-size: 1em; }
   .hero__title .hero__title-accent { padding-left: .2em; }
   .hero__title span:nth-child(3) { margin-top: 22px; }
   .hero__description { max-width: 390px; margin-bottom: 22px; font-size: 15px; }
   .hero__cta { min-width: 190px; }
-  .hero__stamp { top: 29%; right: 7%; bottom: auto; font-size: clamp(24px, 8vw, 34px); }
+  .hero__stamp { top: calc(80px + 24px); right: 24px; bottom: auto; font-size: clamp(24px, 8vw, 34px); }
   .hero__scroll { bottom: 20px; left: 50%; right: auto; }
   .feature-block, .feature-block--assembly { min-height: 440px; align-items: end; }
   .feature-block__image { object-position: center; }
   .feature-block__inner { align-items: end; padding-block: 0 34px; }
-  .feature-block__content, .feature-block--vegetables .feature-block__content, .feature-block--chicken .feature-block__content { width: min(370px, 94%); }
-  .feature-block__title { max-width: 340px; margin-bottom: 10px; font-size: clamp(43px, 11vw, 68px); }
-  .feature-block__description { max-width: 300px; font-size: 15px; }
+  .feature-block__content { width: min(370px, 94%); }
+  .feature-block__title { max-width: 100%; margin-bottom: 10px; font-size: clamp(38px, 9.5vw, 58px); }
+  .feature-block__description { max-width: min(300px, 100%); font-size: 15px; }
   .feature-block__scrim, .feature-block--vegetables .feature-block__scrim, .feature-block--chicken .feature-block__scrim, .feature-block--sauce .feature-block__scrim, .feature-block--assembly .feature-block__scrim { background: linear-gradient(0deg, rgb(4 4 3 / 94%) 0%, rgb(4 4 3 / 56%) 45%, rgb(4 4 3 / 4%) 100%); }
-  .feature-block--vegetables .feature-block__content { margin-left: 0; }
+  /* Keep the alternating left/right desktop composition on mobile. */
+  .feature-block--vegetables .feature-block__content,
+  .feature-block--chicken .feature-block__content { justify-self: end; text-align: right; }
+.feature-block--chicken .feature-block__description { margin-left: auto; }
+  .feature-block--vegetables .feature-block__scrim,
+  .feature-block--chicken .feature-block__scrim { background: linear-gradient(0deg, rgb(4 4 3 / 94%) 0%, rgb(4 4 3 / 56%) 45%, rgb(4 4 3 / 4%) 100%), linear-gradient(270deg, rgb(4 4 3 / 28%), transparent 75%); }
   .combo-banner { min-height: 470px; align-items: end; }
   .combo-banner__image { object-position: 58% center; }
   .combo-banner__scrim { background: linear-gradient(0deg, rgb(4 4 3 / 95%) 0%, rgb(4 4 3 / 67%) 45%, rgb(4 4 3 / 12%) 100%); }
@@ -123,15 +131,165 @@
   .product-rail { grid-auto-columns: minmax(205px, 70%); gap: 12px; }
   .bestsellers__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .about-strip__inner { grid-template-columns: 1fr; gap: 18px; }
-  .about-strip__title { max-width: 420px; font-size: clamp(42px, 11vw, 63px); }
+  .about-strip__title { max-width: 420px; font-size: clamp(39px, 10vw, 63px); line-height: 1.13; letter-spacing: .008em; word-spacing: .14em; }
   .about-strip__description { max-width: 500px; font-size: 16px; }
   .service-strip__inner { align-items: flex-start; flex-direction: column; gap: 20px; }
 }
 
 @media (max-width: 360px) {
   .hero__title { font-size: 39px; }
-  .hero__stamp { top: 29%; right: 5%; bottom: auto; font-size: 24px; }
+  .hero__stamp { top: calc(80px + 18px); right: 18px; bottom: auto; font-size: 24px; }
   .feature-block, .feature-block--assembly { min-height: 410px; }
   .bestsellers__grid { grid-template-columns: 1fr; }
   .product-rail { grid-auto-columns: 82%; }
+}
+
+/* Full-width ingredient storytelling: preserve the complete landscape photos
+   instead of cropping them into tall portrait backgrounds on smaller screens. */
+@media (max-width: 980px) {
+  .feature-block,
+  .feature-block--assembly {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    background: #0a0908;
+  }
+  .feature-block__image {
+    position: relative;
+    z-index: 0;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1700 / 695;
+    object-fit: contain;
+    object-position: center;
+    flex: none;
+  }
+  .feature-block__scrim { display: none; }
+  .feature-block__inner {
+    display: grid;
+    width: min(100% - 40px, 1100px);
+    min-height: 0;
+    padding-block: 24px 38px;
+    align-items: start;
+  }
+  .feature-block__content { width: min(100%, 570px); }
+  .feature-block--vegetables .feature-block__content,
+  .feature-block--chicken .feature-block__content { justify-self: end; text-align: right; }
+  .feature-block--sauce .feature-block__content,
+  .feature-block--assembly .feature-block__content { justify-self: start; text-align: left; }
+  .feature-block__title { font-size: clamp(38px, 6vw, 64px); line-height: 1; }
+}
+@media (max-width: 650px) {
+  .feature-block,
+  .feature-block--assembly { min-height: 0; align-items: stretch; }
+  .feature-block__inner { width: calc(100% - 32px); padding-block: 20px 30px; align-items: start; }
+  .feature-block__content { width: 100%; }
+  .feature-block__title { font-size: clamp(34px, 8.6vw, 52px); }
+  .feature-block__description { max-width: min(330px, 100%); }
+  .feature-block--vegetables .feature-block__description,
+  .feature-block--chicken .feature-block__description { margin-left: auto; }
+}
+
+/* Responsive artwork: on phones use the portrait compositions while keeping
+   the heading and supporting text over the image, as in the desktop design. */
+.feature-block__picture, .combo-banner__picture { position: absolute; z-index: -1; inset: 0; display: block; width: 100%; height: 100%; }
+.feature-block__picture .feature-block__image, .combo-banner__picture .combo-banner__image { width: 100%; height: 100%; }
+@media (min-width: 651px) and (max-width: 980px) {
+  .feature-block__picture { position: relative; z-index: 0; inset: auto; height: auto; }
+  .feature-block__picture .feature-block__image { display: block; height: auto; aspect-ratio: 1700 / 695; object-fit: contain; }
+}
+@media (max-width: 650px) {
+  .feature-block, .feature-block--assembly { position: relative; display: flex; min-height: clamp(540px, 155vw, 760px); align-items: end; isolation: isolate; }
+  .feature-block__picture { position: absolute; z-index: -2; inset: 0; height: 100%; }
+  .feature-block__picture .feature-block__image { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center; }
+  .feature-block__scrim, .feature-block--vegetables .feature-block__scrim,
+  .feature-block--sauce .feature-block__scrim, .feature-block--chicken .feature-block__scrim,
+  .feature-block--assembly .feature-block__scrim { display: block; position: absolute; z-index: -1; inset: 0; background: linear-gradient(0deg, rgb(4 4 3 / 94%) 0%, rgb(4 4 3 / 75%) 14%, rgb(4 4 3 / 20%) 48%, transparent 75%); }
+  .feature-block__inner { min-height: 0; width: calc(100% - 36px); padding-block: 30px 32px; align-items: end; }
+  .feature-block__content { width: 100%; }
+  .feature-block__title { font-size: clamp(34px, 9vw, 52px); overflow-wrap: anywhere; }
+  .feature-block__description { font-size: 14px; }
+  .combo-banner { min-height: clamp(570px, 160vw, 780px); isolation: isolate; align-items: end; }
+  .combo-banner__picture { position: absolute; z-index: -2; inset: 0; }
+  .combo-banner__picture .combo-banner__image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .combo-banner__scrim { z-index: -1; background: linear-gradient(0deg, rgb(4 4 3 / 96%) 0%, rgb(4 4 3 / 72%) 20%, transparent 70%); }
+  .combo-banner__inner { min-height: 0; padding-block: 34px; align-items: end; }
+  .combo-banner__content { width: 100%; }
+}
+
+/* Final responsive story: image, readable scrim and text share one stacking context. */
+.hero__picture { position: absolute; inset: 0; z-index: -2; display: block; width: 100%; height: 100%; }
+.hero__picture .hero__image { width: 100%; height: 100%; object-fit: cover; }
+.feature-block, .combo-banner { isolation: isolate; }
+.feature-block__picture, .combo-banner__picture { z-index: -2; }
+.feature-block__scrim, .combo-banner__scrim { z-index: -1; pointer-events: none; }
+.feature-block__inner, .combo-banner__inner { position: relative; z-index: 1; }
+.feature-block__content, .combo-banner__content { position: relative; z-index: 1; }
+@media (min-width: 651px) and (max-width: 980px) {
+  .feature-block__picture { position: absolute; inset: 0; z-index: -2; height: 100%; }
+  .feature-block__picture .feature-block__image { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
+  .feature-block__inner { min-height: inherit; align-items: center; padding-block: 60px; }
+  .feature-block__scrim { display: block; }
+}
+@media (max-width: 650px) {
+  .hero__picture { z-index: -2; }
+  .hero__picture .hero__image { object-position: center 45%; }
+  .feature-block, .feature-block--assembly, .combo-banner { position: relative; }
+  .feature-block__picture, .combo-banner__picture { position: absolute; inset: 0; z-index: -2; }
+  .feature-block__scrim, .combo-banner__scrim { z-index: -1; }
+  .feature-block__inner, .combo-banner__inner { position: relative; z-index: 1; min-height: inherit; display: flex; align-items: flex-end; padding-block: 30px 38px; }
+  .feature-block__content, .combo-banner__content { width: 100%; max-width: 100%; }
+  .feature-block__title { font-size: clamp(32px, 8.4vw, 48px); line-height: 1.03; overflow-wrap: normal; hyphens: auto; text-wrap: balance; text-shadow: 0 2px 14px rgb(0 0 0 / 65%); }
+  .feature-block__description, .combo-banner__description { font-size: clamp(13px, 3.5vw, 16px); line-height: 1.5; text-shadow: 0 1px 8px rgb(0 0 0 / 75%); }
+  .feature-block--vegetables .feature-block__content, .feature-block--chicken .feature-block__content { text-align: left; }
+  .feature-block--vegetables .feature-block__description, .feature-block--chicken .feature-block__description { margin-left: 0; }
+  .combo-banner__title { font-size: clamp(42px, 11vw, 62px); line-height: .98; text-shadow: 0 2px 14px rgb(0 0 0 / 65%); }
+}
+
+/* CheFish story rhythm: alternate the COMPLETE text group on every screen.
+   Keep image overlays and existing responsive type sizes unchanged. */
+.feature-block--vegetables .feature-block__content,
+.feature-block--chicken .feature-block__content { margin-inline-start: auto; margin-inline-end: 0; text-align: right; }
+.feature-block--vegetables .feature-block__description,
+.feature-block--chicken .feature-block__description { margin-inline-start: auto; margin-inline-end: 0; }
+.feature-block--sauce .feature-block__content,
+.feature-block--assembly .feature-block__content { margin-inline-start: 0; margin-inline-end: auto; text-align: left; }
+.feature-block--sauce .feature-block__description,
+.feature-block--assembly .feature-block__description { margin-inline-start: 0; margin-inline-end: auto; }
+@media (max-width: 650px) {
+  .feature-block--vegetables .feature-block__content,
+  .feature-block--chicken .feature-block__content { width: min(100%, 90%); align-self: flex-end; }
+  .feature-block--sauce .feature-block__content,
+  .feature-block--assembly .feature-block__content { width: min(100%, 90%); align-self: flex-start; }
+  .feature-block__title { max-width: 100%; }
+  .feature-block__description { max-width: min(100%, 340px); }
+}
+
+/* Consistent bottom placement: horizontal alignment must never change vertical placement.
+   Previous align-self:flex-start moved left-aligned blocks to the top of the image. */
+@media (max-width: 650px) {
+  .feature-block .feature-block__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    min-height: inherit;
+  }
+  .feature-block .feature-block__content {
+    align-self: auto;
+    flex: 0 0 auto;
+  }
+  .feature-block--vegetables .feature-block__content,
+  .feature-block--chicken .feature-block__content {
+    margin-inline: auto 0;
+    text-align: right;
+  }
+  .feature-block--sauce .feature-block__content,
+  .feature-block--assembly .feature-block__content {
+    margin-inline: 0 auto;
+    text-align: left;
+  }
 }

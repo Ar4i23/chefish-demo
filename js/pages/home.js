@@ -3,10 +3,10 @@ import { renderProductCard } from '../components/product-card.js';
 import { t } from '../data/i18n.js';
 
 const storySections = [
-  { id: 'vegetables', image: '/assets/images/sections/vegetables.webp', titleKey: 'home.sections.vegetables', bodyKey: 'home.sections.vegetablesBody', position: 'feature-block--vegetables' },
-  { id: 'sauce', image: '/assets/images/sections/sauce.webp', titleKey: 'home.sections.sauce', bodyKey: 'home.sections.sauceBody', position: 'feature-block--sauce' },
-  { id: 'chicken', image: '/assets/images/sections/chicken.webp', titleKey: 'home.sections.chicken', bodyKey: 'home.sections.chickenBody', position: 'feature-block--chicken' },
-  { id: 'assembly', image: '/assets/images/sections/assembly.webp', titleKey: 'home.sections.assembly', bodyKey: 'home.sections.assemblyBody', position: 'feature-block--assembly' },
+  { id: 'vegetables', image: '/assets/images/sections/vegetables.webp', mobileImage: '/assets/images/sections/vegetables-mobile.webp', titleKey: 'home.sections.vegetables', bodyKey: 'home.sections.vegetablesBody', position: 'feature-block--vegetables' },
+  { id: 'sauce', image: '/assets/images/sections/sauce.webp', mobileImage: '/assets/images/sections/sauce-mobile.webp', titleKey: 'home.sections.sauce', bodyKey: 'home.sections.sauceBody', position: 'feature-block--sauce' },
+  { id: 'chicken', image: '/assets/images/sections/chicken.webp', mobileImage: '/assets/images/sections/chicken-mobile.webp', titleKey: 'home.sections.chicken', bodyKey: 'home.sections.chickenBody', position: 'feature-block--chicken' },
+  { id: 'assembly', image: '/assets/images/sections/assembly.webp', mobileImage: '/assets/images/sections/assembly-mobile.webp', titleKey: 'home.sections.assembly', bodyKey: 'home.sections.assemblyBody', position: 'feature-block--assembly' },
 ];
 
 export function renderHome(lang) {
@@ -16,7 +16,7 @@ export function renderHome(lang) {
   return `
     <main class="page page--home">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero__image" src="/assets/images/sections/hero-rolls.webp" alt="Три фирменные шаурмы CheFish на гриле" width="1800" height="1013" fetchpriority="high" />
+        <picture class="hero__picture"><source media="(max-width: 650px)" srcset="/assets/images/sections/hero-rolls-mobile.webp" /><img class="hero__image" src="/assets/images/sections/hero-rolls.webp" alt="Три фирменные шаурмы CheFish на гриле" width="1800" height="1013" fetchpriority="high" /></picture>
         <div class="hero__scrim" aria-hidden="true"></div>
         <div class="container hero__layout">
           <div class="hero__content" data-reveal>
@@ -32,7 +32,7 @@ export function renderHome(lang) {
       <section class="home-story" id="story" aria-label="${t('home.sections.vegetables', lang)}">
         ${storySections.map((section, index) => `
           <article class="feature-block ${section.position}" id="${section.id}" data-reveal>
-            <img class="feature-block__image" src="${section.image}" alt="${t(section.titleKey, lang)} CheFish" width="1700" height="695" loading="lazy" />
+            <picture class="feature-block__picture"><source media="(max-width: 650px)" srcset="${section.mobileImage}" /><img class="feature-block__image" src="${section.image}" alt="${t(section.titleKey, lang)} CheFish" width="1700" height="695" loading="lazy" /></picture>
             <div class="feature-block__scrim" aria-hidden="true"></div>
             <div class="container feature-block__inner">
               <div class="feature-block__content">
@@ -44,7 +44,7 @@ export function renderHome(lang) {
       </section>
 
       <section class="combo-banner" id="combos">
-        <img class="combo-banner__image" src="/assets/images/sections/combo-banner.webp" alt="Шаурма, картофель фри и кола CheFish" width="1700" height="695" loading="lazy" />
+        <picture class="combo-banner__picture"><source media="(max-width: 650px)" srcset="/assets/images/sections/combo-mobile.webp" /><img class="combo-banner__image" src="/assets/images/sections/combo-banner.webp" alt="Шаурма, картофель фри и кола CheFish" width="1700" height="695" loading="lazy" /></picture>
         <div class="combo-banner__scrim" aria-hidden="true"></div>
         <div class="container combo-banner__inner" data-reveal>
           <div class="combo-banner__content">
